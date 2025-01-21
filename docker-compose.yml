@@ -1,0 +1,18 @@
+services:
+  flask:
+    build: ./flask # Build from Dockerfile in flask directory
+    restart: unless-stopped
+    environment:
+      FLASK_APP: app.py
+    ports:
+      - "5000:5000" # Map container port to host port
+
+  nuxt:
+    build: ./nuxt # Build from Dockerfile in nuxtjs directory
+    restart: unless-stopped
+    ports:
+      - "3000:3000" # Map container port to host port
+    environment:
+      FLASK_API_URL: http://localhost:5000/ # Adjust for production if needed
+
+# Additional services (NGINX, proxy, etc.) if needed

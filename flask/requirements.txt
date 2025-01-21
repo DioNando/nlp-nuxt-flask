@@ -1,0 +1,17 @@
+# 00 framework_flask
+Flask==2.1.2
+Flask-Cors==3.0.10
+Werkzeug==2.1.2
+
+# 01 sentiment_analysis
+nltk==3.6.5
+
+# 02 named_entity_recognition
+spacy==3.7.2
+
+# 03 text_summarization
+bert-extractive-summarizer==0.10.1
+
+# 04 language_translation
+googletrans==4.0.0-rc1
+torch==2.2.0
