@@ -51,14 +51,6 @@ def name_entity_recognition():
     except Exception as e:
         return jsonify({'error': str(e)})
     
-# 03_text_classification
-# @app.route('/text_classification', methods=['POST'])
-# def text_classification():
-#     try:
-
-#     except Exception as e:
-#         return jsonify({'error': str(e)})
-
 # 04_text_summarization
 @app.route('/text_summarization', methods=['POST'])
 def text_summarization():
